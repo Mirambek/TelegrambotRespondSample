@@ -1,0 +1,11 @@
+FROM python
+
+COPY *.py /src/
+RUN pip install pytelegrambotapi
+# RUN printf "go run /go/src/main.go" > /go/src/run.sh 
+# RUN chmod +x /go/src/run.sh
+# RUN chmod +x /go/src/main.go
+# ENTRYPOINT /go/src/run.sh
+
+#docker run -v C:\publish\PythonTelegraBot:/usr/local/go/src -it --rm -w="/usr/local/go/src" python
+#docker run --rm -it -w=/src pyth /bin/bash
